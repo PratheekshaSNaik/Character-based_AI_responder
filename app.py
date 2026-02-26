@@ -44,7 +44,7 @@ def ask_question(character):
             break
         
         response = client.chat.completions.create(
-            model="llama3-8b-8192",  # you can change model
+            model="llama-3.1-8b-instant",  # you can change model
             messages=[
                 {"role": "system", "content": characters[character]},
                 {"role": "user", "content": user_input}
